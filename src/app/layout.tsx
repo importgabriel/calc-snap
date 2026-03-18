@@ -2,8 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "App",
-  description: "Built by Agent Switch",
+  title: "Calculator",
+  description: "A simple, modern calculator built with Next.js and Tailwind CSS.",
 };
 
 export default function RootLayout({
@@ -12,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className="h-full">
+      <body className="h-full">{children}</body>
     </html>
   );
 }
